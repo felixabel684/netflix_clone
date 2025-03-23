@@ -24,7 +24,7 @@ export async function GET(req: Request) {
   } catch (error) {
     console.error("Error fetching favorite movies:", error);
     return NextResponse.json(
-      { error: "Something went wrong" },
+      { error: "Something went wrong." },
       { status: 400 }
     );
   }
