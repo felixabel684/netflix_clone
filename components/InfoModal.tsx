@@ -8,6 +8,7 @@ import useMovie from "@/hooks/useMovie";
 
 interface InfoModalProps {
     visible: boolean;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     onClose: any;
 };
 

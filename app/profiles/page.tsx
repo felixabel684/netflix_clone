@@ -24,6 +24,7 @@ const Profiles = () => {
                 "
               >
                 {/* ✅ Perbaiki path gambar */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/default-blue.png" alt="Profile" />
               </div>
 

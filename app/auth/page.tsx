@@ -56,6 +56,7 @@ const Auth = () => {
     <div className="relative h-full w-full bg-[url('/images/hero.png')] bg-no-repeat bg-center bg-fixed bg-cover">
       <div className="bg-black lg:bg-opacity-50 w-full h-full">
         <nav className="px-12 py-5">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/logo.png" alt="Logo" className="h-12" />
         </nav>
 
@@ -68,13 +69,16 @@ const Auth = () => {
               {variant === "register" && (
                 <Input
                   label="Username"
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   onChange={(ev: any) => setName(ev.target.value)}
                   id="name"
+                  type="text"
                   value={name}
                 />
               )}
               <Input
                 label="Email"
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 onChange={(ev: any) => setEmail(ev.target.value)}
                 id="email"
                 type="email"
@@ -83,6 +87,7 @@ const Auth = () => {
 
               <Input
                 label="Password"
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 onChange={(ev: any) => setPassword(ev.target.value)}
                 id="password"
                 type="password"

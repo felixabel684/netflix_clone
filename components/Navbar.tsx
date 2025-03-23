@@ -50,6 +50,7 @@ const Navbar = () => {
                     ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}
                 `}
         >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="h-4 lg:h-7" src="/images/logo.png" alt="Logo" />
           <div
             className="
@@ -86,6 +87,7 @@ const Navbar = () => {
 
             <div onClick={toogleAccountMenu} className="flex flex-row items-center gap-2 cursor-pointer relative">
               <div className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/default-blue.png" alt="Profiles" />
               </div>
               <BsChevronDown className={`text-white transition ${showAccountMenu ? 'rotate-180' : 'rotate-0'}`} />

@@ -10,6 +10,7 @@ import FavoriteButton from "./FavoriteButton";
 import useInfoModal from "@/hooks/useInfoModal";
 
 interface MovieCardProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data: Record<string, any>;
 }
 
@@ -19,6 +20,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
 
   return (
     <div className="group bg-zinc-900 col-span relative h-[12vw]">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="
                     cursor-pointer
@@ -58,6 +60,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                 "
       >
         {/* Gambar kedua */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="
                         cursor-pointer

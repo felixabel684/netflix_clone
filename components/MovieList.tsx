@@ -4,6 +4,7 @@ import { isEmpty } from 'lodash'
 import MovieCard from "./MovieCard";
 
 interface MovieListProps {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     data: Record<string, any>[];
     title: string;
 }
